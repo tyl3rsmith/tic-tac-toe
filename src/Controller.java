@@ -84,6 +84,20 @@ public class Controller {
         System.out.println("Yay congrats " + name + " you won!");
     }
 
+    void displayWins(Player player1, Player player2) {
+        if (player1.getWins() == 1) {
+            System.out.println(player1.getName() + ": you have won 1 time!");
+        } else {
+            System.out.println(player1.getName() + ": you have won " + player1.getWins() + " times!");
+        }
+
+        if (player2.getWins() == 1) {
+            System.out.println(player2.getName() + ": you have won 1 time!");
+        } else {
+            System.out.println(player2.getName() + ": you have won " + player2.getWins() + " times!");
+        }
+    }
+
     void displayStalemate() {
         System.out.println("Stalemate! Nobody wins :(");
     }

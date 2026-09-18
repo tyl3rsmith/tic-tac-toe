@@ -45,6 +45,8 @@ public class Board {
             if (playerBoard[i][0] != null && playerBoard[i][1] != null && playerBoard[i][2] != null &&
                     playerBoard[i][0].getSymbol() == playerBoard[i][1].getSymbol() &&
                     playerBoard[i][1].getSymbol() == playerBoard[i][2].getSymbol()) {
+
+                playerBoard[i][0].setWins(playerBoard[i][0].getWins() + 1);
                 return playerBoard[i][0].getName();
             }
         }
@@ -54,6 +56,8 @@ public class Board {
             if (playerBoard[0][i] != null && playerBoard[1][i] != null && playerBoard[2][i] != null &&
                     playerBoard[0][i].getSymbol() == playerBoard[1][i].getSymbol() &&
                     playerBoard[1][i].getSymbol() == playerBoard[2][i].getSymbol()) {
+
+                playerBoard[0][i].setWins(playerBoard[0][i].getWins() + 1);
                 return playerBoard[0][i].getName();
             }
         }
@@ -62,6 +66,8 @@ public class Board {
         if (playerBoard[0][0] != null && playerBoard[1][1] != null && playerBoard[2][2] != null &&
                 playerBoard[0][0].getSymbol() == playerBoard[1][1].getSymbol() &&
                 playerBoard[1][1].getSymbol() == playerBoard[2][2].getSymbol()) {
+
+            playerBoard[0][0].setWins(playerBoard[0][0].getWins() + 1);
             return playerBoard[0][0].getName();
         }
 
@@ -69,6 +75,8 @@ public class Board {
         if (playerBoard[0][2] != null && playerBoard[1][1] != null && playerBoard[2][0] != null &&
                 playerBoard[0][2].getSymbol() == playerBoard[1][1].getSymbol() &&
                 playerBoard[1][1].getSymbol() == playerBoard[2][0].getSymbol()) {
+
+            playerBoard[0][2].setWins(playerBoard[0][2].getWins() + 1);
             return playerBoard[0][2].getName();
         }
 

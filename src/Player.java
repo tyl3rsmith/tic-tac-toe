@@ -1,10 +1,12 @@
 public class Player {
     private String name;
     private char symbol;
+    private int wins;
 
     Player(String name, char symbol) {
         this.name = name;
         this.symbol = symbol;
+        this.wins = 0;
     }
 
     public char getSymbol() {
@@ -21,5 +23,13 @@ public class Player {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getWins() {
+        return wins;
+    }
+
+    public void setWins(int wins) {
+        this.wins = wins;
     }
 }

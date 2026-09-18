@@ -53,6 +53,7 @@ public class Game {
 
             if (!winner.isEmpty()) {
                 controller.displayWinner(winner);
+                controller.displayWins(playerOne, playerTwo);
                 break;
             }
 
